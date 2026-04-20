@@ -1,0 +1,24 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f4f4f4;font-family:'Georgia','Times New Roman',serif}
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:#ebebeb}
+::-webkit-scrollbar-thumb{background:#c8102e;border-radius:2px}
+button,[role="button"]{transition:all 0.1s ease}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{opacity:0.5}
+.k-btn{cursor:pointer;border-radius:2px;font-family:'Georgia',serif;font-weight:700;font-size:13px}
+.k-btn:active{transform:scale(0.98)}
+.bottom-tab:active{opacity:0.7}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:translateX(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.zone-row{animation:fadeIn 0.2s ease}
+.algo-card{animation:slideIn 0.25s ease}
+.spinner{width:14px;height:14px;border:2px solid #d8d8d8;border-top:2px solid #c8102e;border-radius:50%;animation:spin 0.7s linear infinite;display:inline-block;vertical-align:middle;margin-right:6px}
+.warning-badge{background:#fff3e0;color:#b8610a;padding:2px 8px;border-radius:2px;font-size:10px;font-weight:600}
+.success-badge{background:#e8f5ed;color:#1a7a3c;padding:2px 8px;border-radius:2px;font-size:10px;font-weight:600}
+.metric-value{font-family:'Courier New',monospace;font-weight:700}
+.progress-bar{height:4px;background:#ebebeb;border-radius:2px;overflow:hidden}
+.progress-fill{height:100%;transition:width 0.3s ease}
+#kryptxRoot{background:#f4f4f4;min-height:100vh;color:#1a1a1a;font-family:'Georgia',serif;max-width:480px;margin:0 auto;position:relative}
